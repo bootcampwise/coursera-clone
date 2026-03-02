@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import type { SearchCourseCardProps } from "../../types/ui/search-results.types";
+import { IMAGES } from "../../constants/images";
 
 const SearchCourseCard: React.FC<SearchCourseCardProps> = ({
   id,
@@ -63,9 +64,15 @@ const SearchCourseCard: React.FC<SearchCourseCardProps> = ({
         {/* Partner Info */}
         <div className="flex items-center gap-2 mb-3">
           <img
-            src={partnerLogo}
-            alt={partnerName}
+            src={partnerLogo || IMAGES.LOGOS.GOOGLE_LOGO}
+            alt=""
             className="h-[18px] w-auto object-contain"
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (target.src !== IMAGES.LOGOS.GOOGLE_LOGO) {
+                target.src = IMAGES.LOGOS.GOOGLE_LOGO;
+              }
+            }}
           />
           <span className="text-[12px] text-text-secondary font-medium">
             {partnerName}

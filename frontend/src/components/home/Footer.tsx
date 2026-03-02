@@ -455,7 +455,7 @@ const Footer: React.FC<FooterProps> = ({ simple }) => {
               <img
                 src={IMAGES.FOOTER.B_ICON}
                 alt="B Corporation"
-                className="h-[52px] w-auto my-1"
+                className="h-[52px] w-auto my-1 cursor-pointer"
               />
               <div className="h-1.5 w-[64px] bg-text-primary mb-1"></div>
               <span className="text-[12px] font-medium tracking-wide">

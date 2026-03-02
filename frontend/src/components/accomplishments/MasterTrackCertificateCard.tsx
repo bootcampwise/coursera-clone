@@ -10,7 +10,7 @@ const MasterTrackCertificateCard: React.FC<MasterTrackCertificateCardProps> = ({
   typeLabel,
 }) => {
   return (
-    <div className="flex flex-col h-full bg-white border border-border rounded-[10px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.08)]">
+    <div className="flex flex-col h-full bg-white border border-border rounded-[10px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.08)] cursor-pointer">
       <div className="relative p-2 h-[150px] overflow-hidden rounded-2xl">
         <img
           src={image}

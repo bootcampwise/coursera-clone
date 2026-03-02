@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
               <div className="flex flex-col gap-4 items-start w-full">
                 <Button
                   variant="primary"
-                  className="bg-primary! text-background! font-bold! py-3.5! px-8! rounded-[5px]! hover:bg-primary-hover! shadow-md w-fit md:w-auto text-[16px]"
+                  className="bg-primary! text-background! font-bold! py-3.5! px-8! rounded-[5px]! hover:bg-primary-hover! shadow-md w-fit md:w-auto text-[16px] cursor-pointer"
                 >
                   Start 7-day Free Trial
                 </Button>

@@ -28,10 +28,10 @@ const Pricing: React.FC = () => {
           </h2>
           <div className="inline-flex bg-white rounded-full p-1 shadow-sm border border-border-muted relative">
             <div className="absolute left-1 top-1 bottom-1 w-[50%] bg-primary rounded-full transition-all duration-300"></div>
-            <button className="relative z-10 px-8 py-2 text-white font-semibold text-sm rounded-full">
+            <button className="relative z-10 px-8 py-2 text-white font-semibold text-sm rounded-full cursor-pointer">
               For you
             </button>
-            <button className="relative z-10 px-6 py-2 text-text-secondary font-semibold text-sm rounded-full hover:text-primary transition-colors">
+            <button className="relative z-10 px-6 py-2 text-text-secondary font-semibold text-sm rounded-full hover:text-primary transition-colors cursor-pointer">
               For your team
             </button>
           </div>
@@ -100,7 +100,7 @@ const Pricing: React.FC = () => {
 
               <Button
                 variant="primary"
-                className="!w-full !py-3 !rounded-[4px] !font-bold mb-4"
+                className="!w-full !py-3 !rounded-[4px] !font-bold mb-4 cursor-pointer"
               >
                 Start 7-day free trial
               </Button>
@@ -159,7 +159,7 @@ const Pricing: React.FC = () => {
 
             <Button
               variant="outline"
-              className="!w-full !py-3 !rounded-[4px] !font-bold !border-primary !text-primary hover:!bg-blue-50 mb-4"
+              className="!w-full !py-3 !rounded-[4px] !font-bold !border-primary !text-primary hover:!bg-blue-50 mb-4 cursor-pointer"
             >
               Try Coursera Plus Annual
             </Button>

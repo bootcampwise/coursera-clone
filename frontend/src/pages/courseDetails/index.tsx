@@ -103,11 +103,11 @@ const CourseDetails: React.FC = () => {
       <main>
         <CourseHero course={course} />
 
-        <div className="max-w-[1340px] 2xl:max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-12 relative -mt-10 sm:-mt-12 z-10">
+        <div className="max-w-[1340px] 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-12 relative -mt-10 sm:-mt-12 z-10">
           <CourseInfoBar course={course} />
         </div>
 
-        <div className="max-w-[1240px] 2xl:max-w-[1360px] px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-12 py-8 sm:py-10 lg:py-12">
+        <div className="max-w-[1240px] 2xl:max-w-[1360px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-12 py-8 sm:py-10 lg:py-12">
           <CourseTabs />
 
           <div className="mt-8 sm:mt-10 lg:mt-12">
@@ -122,11 +122,11 @@ const CourseDetails: React.FC = () => {
           </div>
         </div>
 
-        <div className="max-w-[1340px] 2xl:max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-12 mt-8 sm:mt-10 lg:mt-12">
+        <div className="max-w-[1340px] 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-12 mt-8 sm:mt-10 lg:mt-12">
           <AdvanceExpertise thumbnailUrl={course.thumbnail} />
         </div>
 
-        <div className="max-w-[1340px] 2xl:max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-12 py-8 sm:py-10 lg:py-12">
+        <div className="max-w-[1340px] 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-12 py-8 sm:py-10 lg:py-12">
           <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 items-start">
             <div className="flex-1 min-w-0 space-y-12">
               <CourseSeries courses={seriesCourses} />
@@ -137,7 +137,7 @@ const CourseDetails: React.FC = () => {
           </div>
         </div>
 
-        <div className="max-w-[1340px] 2xl:max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-12 pb-8 sm:pb-10 lg:pb-12">
+        <div className="max-w-[1340px] 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-12 pb-8 sm:pb-10 lg:pb-12">
           <CareerTestimonials />
         </div>
       </main>

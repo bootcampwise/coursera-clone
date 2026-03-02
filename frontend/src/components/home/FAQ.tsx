@@ -36,7 +36,7 @@ const FAQ: React.FC = () => {
                 >
                   <button
                     onClick={() => toggleIndex(index)}
-                    className="flex items-center gap-4 w-full text-left group"
+                    className="flex items-center gap-4 w-full text-left group cursor-pointer"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ const FAQ: React.FC = () => {
             </div>
 
             <div className="mt-12 flex justify-start">
-              <button className="flex items-center gap-2 text-text-primary font-semibold text-sm hover:text-primary transition-colors">
+              <button className="flex items-center gap-2 text-text-primary font-semibold text-sm hover:text-primary transition-colors cursor-pointer">
                 Show all 8 frequently asked questions
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

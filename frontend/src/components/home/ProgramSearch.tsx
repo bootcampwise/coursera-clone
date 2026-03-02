@@ -32,7 +32,7 @@ const ProgramSearch: React.FC = () => {
             />
             <button
               type="submit"
-              className="absolute right-2 top-2 h-[32px] w-[32px] md:h-[44px] md:w-[44px] bg-primary text-white rounded-[4px] flex items-center justify-center hover:bg-primary-hover transition-colors"
+              className="absolute right-2 top-2 h-[32px] w-[32px] md:h-[44px] md:w-[44px] bg-primary text-white rounded-[4px] flex items-center justify-center hover:bg-primary-hover transition-colors cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ const ProgramSearch: React.FC = () => {
                 index === 0
                   ? "bg-white text-text-secondary hover:bg-gray-100"
                   : "bg-blue-50 text-primary hover:bg-blue-100"
-              }`}
+              } cursor-pointer`}
             >
               {tag}
             </button>

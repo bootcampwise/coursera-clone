@@ -285,7 +285,7 @@ const AccountSettings: FC = () => {
                     type="button"
                     onClick={handleChangePassword}
                     disabled={isUpdatingPassword}
-                    className="px-4 py-2 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="px-4 py-2 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {isUpdatingPassword ? "Updating..." : "Change Password"}
                   </button>
@@ -341,7 +341,7 @@ const AccountSettings: FC = () => {
                 <div>
                   <button
                     type="button"
-                    className="px-4 py-2 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white"
+                    className="px-4 py-2 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white cursor-pointer"
                   >
                     Enable Two-Factor Authentication?
                   </button>
@@ -362,7 +362,7 @@ const AccountSettings: FC = () => {
                 <div>
                   <button
                     type="button"
-                    className="px-4 py-2 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white"
+                    className="px-4 py-2 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white cursor-pointer"
                   >
                     Log out from all devices
                   </button>
@@ -453,7 +453,7 @@ const AccountSettings: FC = () => {
                   <div className="pt-1">
                     <button
                       type="button"
-                      className="h-[38px] px-5 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white"
+                      className="h-[38px] px-5 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white cursor-pointer"
                     >
                       Unlink my Google Account
                     </button>
@@ -485,7 +485,7 @@ const AccountSettings: FC = () => {
                 <div>
                   <button
                     type="button"
-                    className="px-4 py-2 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white"
+                    className="px-4 py-2 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white cursor-pointer"
                   >
                     Delete Account
                   </button>
@@ -516,7 +516,7 @@ const AccountSettings: FC = () => {
 
                   <button
                     type="button"
-                    className="w-full sm:w-auto shrink-0 px-4 py-1.5 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white"
+                    className="w-full sm:w-auto shrink-0 px-4 py-1.5 rounded-[4px] border border-primary text-primary text-[14px] font-medium hover:bg-account-bg-muted transition-all bg-white cursor-pointer"
                   >
                     Send Report
                   </button>

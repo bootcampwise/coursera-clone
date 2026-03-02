@@ -175,7 +175,7 @@ const UserProfile: React.FC = () => {
 
               <Button
                 variant="outline"
-                className="w-full max-w-[260px] h-[52px] sm:h-[62px] text-[16px] sm:text-[18px] font-normal mb-4 flex items-center justify-center gap-2 border-profile-link-blue text-profile-link-blue hover:bg-transparent px-4"
+                className="w-full max-w-[260px] h-[52px] sm:h-[62px] text-[16px] sm:text-[18px] font-normal mb-4 flex items-center justify-center gap-2 border-profile-link-blue text-profile-link-blue hover:bg-transparent px-4 cursor-pointer"
               >
                 <PaperclipIcon />
                 <span>Share profile link</span>
@@ -220,7 +220,7 @@ const UserProfile: React.FC = () => {
 
               <Button
                 variant="outline"
-                className="w-full max-w-[260px] h-[48px] text-[16px] font-normal flex items-center justify-center gap-2 border-profile-btn-blue text-profile-btn-blue hover:bg-transparent px-4"
+                className="w-full max-w-[260px] h-[48px] text-[16px] font-normal flex items-center justify-center gap-2 border-profile-btn-blue text-profile-btn-blue hover:bg-transparent px-4 cursor-pointer"
               >
                 <PlusIcon />
                 <span>Add work preferences</span>
@@ -239,7 +239,7 @@ const UserProfile: React.FC = () => {
 
               <Button
                 variant="outline"
-                className="w-full max-w-[260px] h-[48px] text-[16px] font-normal flex items-center justify-center gap-2 border-profile-btn-blue text-profile-btn-blue hover:bg-transparent px-4"
+                className="w-full max-w-[260px] h-[48px] text-[16px] font-normal flex items-center justify-center gap-2 border-profile-btn-blue text-profile-btn-blue hover:bg-transparent px-4 cursor-pointer"
               >
                 <PlusIcon />
                 <span>Add additional info</span>
@@ -359,7 +359,7 @@ const UserProfile: React.FC = () => {
                 <Button
                   variant="outline"
                   onClick={openAddWorkModal}
-                  className="w-full max-w-[260px] h-[48px] text-[16px] font-normal flex items-center justify-center gap-2 border-profile-btn-blue text-profile-btn-blue hover:bg-transparent px-4"
+                  className="w-full max-w-[260px] h-[48px] text-[16px] font-normal flex items-center justify-center gap-2 border-profile-btn-blue text-profile-btn-blue hover:bg-transparent px-4 cursor-pointer"
                 >
                   <PlusIcon />
                   <span>Add work experience</span>
@@ -388,7 +388,7 @@ const UserProfile: React.FC = () => {
                   <Button
                     variant="outline"
                     onClick={openCredentialSelectionModal}
-                    className="h-[32px] px-4 text-[14px] font-normal flex items-center gap-2 border-profile-vibrant-link text-profile-vibrant-link hover:bg-transparent"
+                    className="h-[32px] px-4 text-[14px] font-normal flex items-center gap-2 border-profile-vibrant-link text-profile-vibrant-link hover:bg-transparent cursor-pointer"
                   >
                     <PlusIcon size={12} />
                     <span>Add</span>

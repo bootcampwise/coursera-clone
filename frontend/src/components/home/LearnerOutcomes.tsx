@@ -16,7 +16,7 @@ const LearnerOutcomes: React.FC = () => {
           </h2>
           <div className="mt-8">
             <Button
-              className=" text-primary border-primary font-bold border py-3 px-8 hover:bg-blue-50 rounded-[5px] text-[16px]"
+              className=" text-primary border-primary font-bold border py-3 px-8 hover:bg-blue-50 rounded-[5px] text-[16px] cursor-pointer"
               variant="ghost"
             >
               Start 7-day Free Trial

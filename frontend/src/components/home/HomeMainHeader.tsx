@@ -174,7 +174,7 @@ const Header: React.FC = () => {
               <Button
                 variant="ghost"
                 onClick={() => navigate("/search")}
-                className="text-sm font-medium flex items-center gap-1 text-primary hover:no-underline"
+                className="text-sm font-medium flex items-center gap-1 text-primary hover:no-underline cursor-pointer"
               >
                 Explore
                 <svg
@@ -240,7 +240,7 @@ const Header: React.FC = () => {
               )}
               <button
                 type="submit"
-                className="absolute right-1 top-1 h-[40px] w-[40px] flex items-center justify-center bg-primary text-white rounded-full hover:bg-primary-hover transition-colors"
+                className="absolute right-1 top-1 h-[40px] w-[40px] flex items-center justify-center bg-primary text-white rounded-full hover:bg-primary-hover transition-colors cursor-pointer"
                 aria-label="Search"
               >
                 {isLoading ? (
@@ -511,7 +511,7 @@ const Header: React.FC = () => {
                 />
                 <button
                   type="submit"
-                  className="absolute right-1 top-1 h-[40px] w-[40px] bg-primary text-white rounded-full flex items-center justify-center"
+                  className="absolute right-1 top-1 h-[40px] w-[40px] bg-primary text-white rounded-full flex items-center justify-center cursor-pointer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

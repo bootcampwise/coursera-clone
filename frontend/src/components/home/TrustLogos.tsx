@@ -12,37 +12,37 @@ const TrustLogos: React.FC = () => (
         <img
           src={IMAGES.LOGOS.ILLINOIS}
           alt="Illinois"
-          className="h-8 md:h-10 w-35 object-contain mx-auto"
+          className="h-8 md:h-10 w-35 object-contain mx-auto cursor-pointer"
         />
         <img
           src={IMAGES.LOGOS.DUKE}
           alt="Duke"
-          className="h-8 md:h-10 w-auto object-contain mx-auto"
+          className="h-8 md:h-10 w-auto object-contain mx-auto cursor-pointer"
         />
         <img
           src={IMAGES.LOGOS.GOOGLE}
           alt="Google"
-          className="h-8 md:h-10 w-auto object-contain mx-auto"
+          className="h-8 md:h-10 w-auto object-contain mx-auto cursor-pointer"
         />
         <img
           src={IMAGES.LOGOS.UMICH}
           alt="Michigan"
-          className="h-10 md:h-12 w-auto object-contain mx-auto"
+          className="h-10 md:h-12 w-auto object-contain mx-auto cursor-pointer"
         />
         <img
           src={IMAGES.LOGOS.IBM}
           alt="IBM"
-          className="h-8 md:h-10 w-auto object-contain mx-auto"
+          className="h-8 md:h-10 w-auto object-contain mx-auto cursor-pointer"
         />
         <img
           src={IMAGES.LOGOS.VANDERBILT}
           alt="Vanderbilt"
-          className="h-8 md:h-10 w-auto object-contain mx-auto"
+          className="h-8 md:h-10 w-auto object-contain mx-auto cursor-pointer"
         />
         <img
           src={IMAGES.LOGOS.PENN}
           alt="Penn"
-          className="h-8 md:h-10 w-auto object-contain mx-auto"
+          className="h-8 md:h-10 w-auto object-contain mx-auto cursor-pointer"
         />
       </div>
     </div>

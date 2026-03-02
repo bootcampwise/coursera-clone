@@ -25,7 +25,7 @@ const useCareerSkills = (): CareerSkillsState => {
             c.instructor?.avatarUrl ||
             "https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg",
           title: c.title,
-          type: `${c.difficulty || "Beginner"} Â· Course`,
+          type: `${c.difficulty || "Beginner"} \u00b7 Course`,
           image:
             c.thumbnail ||
             "https://images.unsplash.com/photo-1591453089816-0fbb971ca25c?w=800&auto=format&fit=crop&q=60",
@@ -66,3 +66,4 @@ const useCareerSkills = (): CareerSkillsState => {
 };
 
 export default useCareerSkills;
+

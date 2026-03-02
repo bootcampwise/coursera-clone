@@ -29,7 +29,8 @@ const CourseInfoBar: React.FC<CourseInfoBarProps> = ({ course: _course }) => {
   ];
 
   return (
-    <div className="bg-white rounded-[12px] shadow-course-card-lg border border-gray-100 p-4 sm:p-6 md:p-8 lg:p-10 flex flex-wrap lg:flex-nowrap items-center justify-between gap-4 sm:gap-6 lg:gap-4 overflow-hidden relative">
+    <div className="mx-auto max-w-7xl">
+    <div className="bg-white rounded-[12px] shadow-course-card-lg border border-gray-100 p-4 sm:p-6 md:p-8 lg:p-10 flex flex-wrap lg:flex-nowrap items-center justify-between gap-4 sm:gap-6 lg:gap-4 2xl:justify-start 2xl:gap-10 overflow-hidden relative">
       {infoItems.map((item, index) => (
         <div
           key={index}
@@ -67,6 +68,7 @@ const CourseInfoBar: React.FC<CourseInfoBarProps> = ({ course: _course }) => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { IMAGES } from "../../constants/images";
 import useCourseEnrollment from "./useCourseEnrollment";
 import type { RootState } from "../../redux/store";
 import type { CourseHeroProps } from "../../types/ui/course-details.types";
+import COURSE_HERO_ICON from "../../assets/icons/course_hero_icon.png";
 
 const CourseHero: React.FC<CourseHeroProps> = ({ course }) => {
   const { user } = useSelector((state: RootState) => state.auth);
@@ -10,8 +11,8 @@ const CourseHero: React.FC<CourseHeroProps> = ({ course }) => {
     useCourseEnrollment(course.id, course.price ?? 0, user);
 
   return (
-    <section className="bg-career-bg relative overflow-hidden pt-10 sm:pt-14 lg:pt-16 pb-12 sm:pb-16 lg:pb-20 border-b border-gray-100 px-4 md:px-0">
-      <div className="max-w-[1200px] 2xl:max-w-[1360px] grid grid-cols-1 lg:grid-cols-2 items-center px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-12 mx-auto">
+    <section className="bg-career-bg relative overflow-hidden pt-10 sm:pt-14 lg:pt-16 pb-12 sm:pb-16 lg:pb-20 border-b border-gray-100">
+      <div className="max-w-7xl grid grid-cols-1 lg:grid-cols-2 items-center px-4 sm:px-6 md:px-8 lg:px-10 mx-auto">
         <div className="z-10">
           <div className="mb-6 flex items-center">
             <img
@@ -45,7 +46,7 @@ const CourseHero: React.FC<CourseHeroProps> = ({ course }) => {
             <button
               onClick={handleEnrollClick}
               disabled={isCheckingEnrollment}
-              className="px-8 py-3 bg-primary text-white rounded-[4px] font-bold text-[16px] hover:bg-primary-hover transition-colors shadow-md disabled:bg-gray-400 w-full sm:w-auto"
+              className="px-8 py-3 bg-primary text-white rounded-[4px] font-bold text-[16px] hover:bg-primary-hover transition-colors shadow-md disabled:bg-gray-400 w-full sm:w-auto cursor-pointer"
             >
               {buttonText}
             </button>
@@ -56,27 +57,15 @@ const CourseHero: React.FC<CourseHeroProps> = ({ course }) => {
             enrolled
           </p>
         </div>
-
-        <div className="hidden lg:flex justify-end pr-6 xl:pr-8">
-          <div className="relative w-[360px] h-[280px] xl:w-[450px] xl:h-[350px]">
-            <div className="absolute top-0 right-0 w-full h-full bg-skeleton-alt rounded-[24px] rotate-3 opacity-40"></div>
-            <div className="absolute top-0 right-0 w-full h-full border border-blue-100 rounded-[24px] -rotate-2"></div>
-            <div className="absolute inset-0 flex items-center justify-center p-12">
-              <div className="w-full h-full bg-white/60 backdrop-blur-sm rounded-[16px] shadow-sm flex items-center justify-center overflow-hidden border border-gray-100">
-                <svg
-                  width="200"
-                  height="200"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="var(--color-course-border-subtle)"
-                  strokeWidth="0.5"
-                >
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                </svg>
-              </div>
-            </div>
+          <div className="flex justify-center lg:justify-start items-center my-auto ">
+                <img
+                  src={COURSE_HERO_ICON}
+                  alt=""
+                  className="w-[200px] h-[200px] object-contain"
+                />
+              
           </div>
-        </div>
+        
       </div>
 
       <div className="absolute bottom-0 right-0 p-8 opacity-20 hidden lg:block">

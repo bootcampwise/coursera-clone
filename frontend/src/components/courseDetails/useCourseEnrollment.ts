@@ -40,7 +40,9 @@ const useCourseEnrollment = (
     }
 
     if (isEnrolled) {
-      navigate("/my-learning");
+      if (courseId) {
+        navigate(`/learn/${courseId}`);
+      }
       return;
     }
 

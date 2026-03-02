@@ -11,7 +11,7 @@ const EarnDegreeCard: React.FC<EarnDegreeCardProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col h-full bg-white border border-border rounded-[10px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.08)] ${className || ""}`}
+      className={`flex flex-col h-full bg-white border border-border rounded-[10px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.08)] cursor-pointer ${className || ""}`}
     >
       <div className="relative p-2 h-[140px] overflow-hidden rounded-2xl">
         <img

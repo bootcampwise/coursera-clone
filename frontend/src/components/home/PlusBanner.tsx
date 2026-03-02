@@ -20,7 +20,7 @@ const PlusBanner: React.FC = () => {
         </p>
 
         <div className="flex flex-col items-center gap-3">
-          <Button className="bg-white! text-primary! font-medium! py-2 px-7 rounded-[4px]! text-[13px] md:text-[14px] hover:bg-white/90! transition-all">
+          <Button className="bg-white! text-primary! font-medium! py-2 px-7 rounded-[4px]! text-[13px] md:text-[14px] hover:bg-white/90! transition-all cursor-pointer">
             Start 7-day Free Trial
           </Button>
           <p className="text-white text-[11px] md:text-[12px] font-normal opacity-80">

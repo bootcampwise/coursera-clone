@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../common/Button";
 import useCareerSkills from "./hooks/useCareerSkills";
+import { IMAGES } from "../../constants/images";
 
 const CareerSkills: React.FC = () => {
   const {
@@ -60,7 +61,7 @@ const CareerSkills: React.FC = () => {
               <div className="hidden md:flex">
                 <Button
                   variant="outline"
-                  className="!bg-white !text-primary !border-primary !font-bold !border !py-2 md:!py-3 !px-4 md:!px-6 hover:!bg-blue-50 !rounded-[5px] text-[14px] md:text-[16px] whitespace-nowrap"
+                  className="!bg-white !text-primary !border-primary !font-bold !border !py-2 md:!py-3 !px-4 md:!px-6 hover:!bg-blue-50 !rounded-[5px] text-[14px] md:text-[16px] whitespace-nowrap cursor-pointer"
                 >
                   Start 7-day Free Trial
                 </Button>
@@ -82,16 +83,27 @@ const CareerSkills: React.FC = () => {
                     />
                     {index === 2 && (
                       <div className="absolute top-2 right-2 bg-white px-2 py-1 rounded text-xs font-bold border border-gray-200 shadow-sm flex items-center gap-1">
-                        <span>âœ¨</span> AI skills
+                        <img
+                          src={IMAGES.UI.STAR_ALT}
+                          alt=""
+                          className="w-3 h-3"
+                        />
+                        <span>AI skills</span>
                       </div>
                     )}
                   </div>
                   <div className="p-4 flex flex-col flex-grow">
                     <div className="flex items-center gap-2 mb-2">
                       <img
-                        src={course.logo}
+                        src={course.logo || IMAGES.LOGOS.GOOGLE_LOGO}
                         alt={course.university}
                         className="w-6 h-6 object-contain rounded-sm"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (target.src !== IMAGES.LOGOS.GOOGLE_LOGO) {
+                            target.src = IMAGES.LOGOS.GOOGLE_LOGO;
+                          }
+                        }}
                       />
                       <span className="text-xs text-text-secondary truncate">
                         {course.university}
@@ -110,7 +122,7 @@ const CareerSkills: React.FC = () => {
               <div className="w-full flex justify-center md:hidden mt-4">
                 <Button
                   variant="outline"
-                  className="!bg-white !text-primary !border-primary !font-bold !border !py-3 !px-6 hover:!bg-blue-50 !rounded-[5px] text-[16px] w-full"
+                  className="!bg-white !text-primary !border-primary !font-bold !border !py-3 !px-6 hover:!bg-blue-50 !rounded-[5px] text-[16px] w-full cursor-pointer"
                 >
                   Start 7-day Free Trial
                 </Button>
@@ -124,7 +136,7 @@ const CareerSkills: React.FC = () => {
                 <Button
                   variant="outline"
                   onClick={() => setShowAll(true)}
-                  className="!bg-white !text-primary !border-primary !font-bold !border !py-3 !px-8 hover:!bg-blue-50 !rounded-[5px] text-[16px]"
+                  className="!bg-white !text-primary !border-primary !font-bold !border !py-3 !px-8 hover:!bg-blue-50 !rounded-[5px] text-[16px] cursor-pointer"
                 >
                   Show {remainingCount} more
                 </Button>
@@ -133,7 +145,7 @@ const CareerSkills: React.FC = () => {
                 <Button
                   variant="outline"
                   onClick={() => setShowAll(true)}
-                  className="!bg-white !text-primary !border-primary !font-bold !border !py-3 !px-6 hover:!bg-blue-50 !rounded-[5px] text-[16px] w-full justify-center"
+                  className="!bg-white !text-primary !border-primary !font-bold !border !py-3 !px-6 hover:!bg-blue-50 !rounded-[5px] text-[16px] w-full justify-center cursor-pointer"
                 >
                   Show more
                 </Button>

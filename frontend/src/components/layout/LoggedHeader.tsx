@@ -262,10 +262,6 @@ const LoggedHeader: React.FC = () => {
                 <>
                   <div className="absolute right-0 mt-3 w-[250px] bg-white rounded-[28px] shadow-course-card-lg border border-border py-6 z-50">
                     {[
-                      {
-                        label: "My Courses",
-                        action: () => navigate("/my-learning"),
-                      },
                       { label: "Profile", action: () => navigate("/profile") },
                       {
                         label: "Settings",
