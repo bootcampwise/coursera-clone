@@ -57,15 +57,13 @@ const CourseHero: React.FC<CourseHeroProps> = ({ course }) => {
             enrolled
           </p>
         </div>
-          <div className="flex justify-center lg:justify-start items-center my-auto ">
-                <img
-                  src={COURSE_HERO_ICON}
-                  alt=""
-                  className="w-[200px] h-[200px] object-contain"
-                />
-              
-          </div>
-        
+        <div className="flex justify-center lg:justify-start items-center my-auto mt-8 sm:mt-10 lg:mt-6 xl:mt-10 2xl:mt-12">
+          <img
+            src={COURSE_HERO_ICON}
+            alt=""
+            className="w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] md:w-[230px] md:h-[230px] lg:w-[260px] lg:h-[260px] object-contain"
+          />
+        </div>
       </div>
 
       <div className="absolute bottom-0 right-0 p-8 opacity-20 hidden lg:block">

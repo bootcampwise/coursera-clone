@@ -70,7 +70,7 @@ const MyLearning: React.FC = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 sm:px-6 py-2 rounded-full text-[13px] sm:text-[14px] font-bold transition-colors ${
+              className={`px-4 sm:px-6 py-2 rounded-full text-[13px] sm:text-[14px] font-bold transition-colors cursor-pointer ${
                 activeTab === tab
                   ? "bg-text-primary text-white"
                   : "bg-white text-text-primary border border-text-primary hover:bg-gray-50"
@@ -170,7 +170,7 @@ const MyLearning: React.FC = () => {
                               `/accomplishments/certificate/${enrollment.certificate?.id}`,
                             )
                           }
-                          className="px-4 sm:px-6 py-[10px] border border-primary text-primary font-bold rounded-[4px] text-[14px] hover:bg-blue-50 transition-colors shadow-sm bg-transparent w-full sm:w-auto"
+                          className="px-4 sm:px-6 py-[10px] border border-primary text-primary font-bold rounded-[4px] text-[14px] hover:bg-blue-50 transition-colors shadow-sm bg-transparent w-full sm:w-auto cursor-pointer"
                         >
                           View Course Certificate
                         </button>
@@ -183,7 +183,7 @@ const MyLearning: React.FC = () => {
                             navigate(`/learn/${enrollment.course.id}`);
                           }
                         }}
-                        className="px-6 sm:px-8 py-[10px] bg-primary text-white font-bold rounded-[4px] text-[14px] hover:bg-primary-hover transition-colors shadow-sm w-full sm:w-auto"
+                        className="px-6 sm:px-8 py-[10px] bg-primary text-white font-bold rounded-[4px] text-[14px] hover:bg-primary-hover transition-colors shadow-sm w-full sm:w-auto cursor-pointer"
                       >
                         {enrollment.completed
                           ? enrollment.hasReviewed
@@ -241,11 +241,11 @@ const MyLearning: React.FC = () => {
               <h3 className="text-[18px] font-bold text-text-primary">
                 Leave a review
               </h3>
-              <button
-                onClick={closeReview}
-                className="text-mylearning-text-muted hover:bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center text-[20px]"
-                aria-label="Close"
-              >
+                <button
+                  onClick={closeReview}
+                  className="text-mylearning-text-muted hover:bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center text-[20px] cursor-pointer"
+                  aria-label="Close"
+                >
                 ×
               </button>
             </div>
@@ -263,7 +263,7 @@ const MyLearning: React.FC = () => {
                     <button
                       key={value}
                       onClick={() => setReviewRating(value)}
-                      className="p-1 rounded-full hover:bg-gray-50"
+                      className="p-1 rounded-full hover:bg-gray-50 cursor-pointer"
                       aria-label={`Rate ${value}`}
                     >
                       <svg
@@ -304,14 +304,14 @@ const MyLearning: React.FC = () => {
             <div className="flex items-center justify-end gap-3 px-6 py-4 border-t border-border">
               <button
                 onClick={closeReview}
-                className="px-6 py-2 border border-mylearning-border-muted rounded-[4px] text-[14px] font-bold text-text-primary hover:bg-gray-50"
+                className="px-6 py-2 border border-mylearning-border-muted rounded-[4px] text-[14px] font-bold text-text-primary hover:bg-gray-50 cursor-pointer"
               >
                 Cancel
               </button>
               <button
                 onClick={submitReview}
                 disabled={isSubmittingReview}
-                className="px-6 py-2 bg-primary text-white rounded-[4px] text-[14px] font-bold hover:bg-primary-hover disabled:opacity-60"
+                className="px-6 py-2 bg-primary text-white rounded-[4px] text-[14px] font-bold hover:bg-primary-hover disabled:opacity-60 cursor-pointer"
               >
                 {isSubmittingReview ? "Submitting..." : "Submit Review"}
               </button>
@@ -320,7 +320,7 @@ const MyLearning: React.FC = () => {
         </div>
       )}
 
-      <button className="fixed bottom-6 right-6 w-[48px] h-[48px] bg-white border border-border rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-gray-50 transition-all z-50">
+      <button className="fixed bottom-6 right-6 w-[48px] h-[48px] bg-white border border-border rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-gray-50 transition-all z-50 cursor-pointer">
         <svg
           width="24"
           height="24"

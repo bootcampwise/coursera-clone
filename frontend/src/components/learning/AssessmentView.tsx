@@ -188,7 +188,7 @@ const AssessmentView: React.FC<AssessmentViewProps> = ({
                 setShowResults(false);
                 setSelectedAnswers({});
               }}
-              className="px-8 py-3 bg-[#0056D2] text-white font-bold rounded-md hover:bg-[#00419e] transition-colors"
+              className="px-8 py-3 bg-[#0056D2] text-white font-bold rounded-md hover:bg-[#00419e] transition-colors cursor-pointer"
             >
               Try Again
             </button>
@@ -246,7 +246,7 @@ const AssessmentView: React.FC<AssessmentViewProps> = ({
                         [q.id]: optIndex,
                       })
                     }
-                    className={`w-full text-left p-4 rounded-[8px] border transition-all ${
+                    className={`w-full text-left p-4 rounded-[8px] border transition-all cursor-pointer ${
                       isSelected
                         ? "border-[#0056D2] bg-[#f0f7ff] shadow-sm"
                         : "border-[#dadce0] hover:bg-gray-50 bg-white"
@@ -285,7 +285,7 @@ const AssessmentView: React.FC<AssessmentViewProps> = ({
             Object.keys(selectedAnswers).length < data.questions.length ||
             isCompleted
               ? "bg-gray-200 text-gray-500 cursor-not-allowed shadow-none"
-              : "bg-black text-white hover:bg-gray-800 active:scale-[0.98]"
+              : "bg-black text-white hover:bg-gray-800 active:scale-[0.98] cursor-pointer"
           }`}
         >
           {isCompleted ? "Assessment Already Passed" : "Submit Quiz"}

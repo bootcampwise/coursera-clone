@@ -104,7 +104,7 @@ const CourseAssessmentResult: React.FC = () => {
             {isPassed && (
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center gap-2 px-6 py-2.5 bg-primary text-white font-bold text-[16px] rounded-[4px] hover:bg-primary-hover transition-colors"
+                className="flex items-center gap-2 px-6 py-2.5 bg-primary text-white font-bold text-[16px] rounded-[4px] hover:bg-primary-hover transition-colors cursor-pointer"
               >
                 Next item
                 <svg

@@ -5,7 +5,7 @@ const CourseTabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState("About");
 
   return (
-    <div className="sticky top-[64px] bg-white z-20 -mx-4 md:-mx-0 px-4 md:px-0 pb-2">
+    <div className="sticky top-[64px] bg-white z-20 pb-2">
       <div className="max-w-[860px]">
         <div className="flex items-center gap-4 sm:gap-8 overflow-x-auto flex-nowrap">
           {tabs.map((tab) => (
